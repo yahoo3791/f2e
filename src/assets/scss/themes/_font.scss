@@ -1,0 +1,35 @@
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+// 
+body {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+}
+// Desktop
+.title-parimary {
+  font-size: 32px;
+}
+.title-second {
+  font-size: 24px;
+}
+.title-third {
+  font-size: 20px;
+}
+.paragraph {
+  font-size: 24px;
+}
+// Mobile
+@include media-breakpoint-down(md) {
+  .title-parimary {
+    font-size: 20px;
+  }
+  .title-second {
+    font-size: 16px;
+  }
+  .title-third {
+    font-size: 14px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+}
