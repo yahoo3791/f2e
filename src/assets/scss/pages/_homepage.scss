@@ -1,0 +1,105 @@
+
+.banner-height {
+  height: 850px;
+  .blue {
+      width: 55%;
+      height: 453px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url('@/assets/image/banner/Blue.png');
+      top: 0;
+      left: 0;
+    }
+    .yellow {
+      width: 50%;
+      height: 352px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url('@/assets/image/banner/Yellow.png');
+      top: 0;
+      right: 0;
+    }
+    .red {
+      width: 50%;
+      height: 292px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url('@/assets/image/banner/Red.png');
+      bottom: 0;
+      left: 0;
+    }
+    .green {
+      width: 53%;
+      height: 414px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url('@/assets/image/banner/Green.png');
+      bottom: 0;
+      right: 0;
+    }
+    .Logo-center {
+      background-image: url('@/assets/image/banner/LOGO02.png');
+      z-index: 2;
+      width: 565px;
+      height: 470px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+}
+.vector-bg {
+  background-image: url('@/assets/image/Vector.png');
+  width: 100%;
+  height: 600px;
+}
+.slogan {
+  height: 240px;
+  .front {
+    width: 50%;
+    height: 225px;
+    left: 0;
+    background-image: url('@/assets/image/slogan/Red.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .ui-designr {
+    width: 50%;
+    height: 250px;
+    right: 0;
+    background-size: contain;
+    background-image: url('@/assets/image/slogan/Yellow.png');
+    background-repeat: no-repeat;
+  }
+}
+.slogan-title {
+    background-image: url('@/assets/image/slogan/Magenta.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 315px;
+}
+.slogan02 {
+  background: $secondary-color-000;
+  text-align: center;
+  z-index: 2;
+  .title-parimary {
+    padding: 20px 0;
+    color: $primary-color;
+  }
+  .paragraph {
+    padding-bottom: 20px;
+    color: $Accent-color-09B;
+  }
+}
+.slogan03 {
+  background: $secondary-color-000;
+  text-align: center;
+  z-index: 2;
+  .title-parimary {
+    padding-bottom: 20px;
+    color: $primary-color;
+  }
+  .paragraph {
+    padding: 20px 0;
+    color: $Accent-color-09B;
+  }
+}
