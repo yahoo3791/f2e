@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkf2e"]=self["webpackChunkf2e"]||[]).push([[443],{4544:function(e,n,u){function r(e,n){return" about "}u.r(n),u.d(n,{default:function(){return a}});var t=u(89);const f={},c=(0,t.Z)(f,[["render",r]]);var a=c}}]);
+//# sourceMappingURL=about.c0221269.js.map
