@@ -5,7 +5,7 @@
   z-index: 1000;
 }
 .mobileNav {
-  margin: 0px -21px;
+  // margin: 0px -21px;
   transform: translateY(-200px);
   transition: all .2s;
   opacity: 0;
@@ -14,7 +14,7 @@
   opacity: 1;
   transform: translateY(0) !important;
 }
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   .navbar {
     position: fixed;
     top: 0;
@@ -23,5 +23,8 @@
     padding: 10px 20px;
     margin: 0;
     background-color: $primary-color;
+  }
+  .mobileNav {
+    margin: 0px -21px;
   }
 }

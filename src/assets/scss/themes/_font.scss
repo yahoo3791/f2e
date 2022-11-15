@@ -19,7 +19,7 @@ body {
   font-size: 24px;
 }
 // Mobile
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   .title-parimary {
     font-size: 20px;
   }

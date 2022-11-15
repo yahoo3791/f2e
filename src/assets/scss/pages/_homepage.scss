@@ -1,9 +1,9 @@
 
 .banner-height {
-  height: 850px;
   .blue {
+    position: absolute;
       width: 55%;
-      height: 453px;
+      height: 100%;
       background-repeat: no-repeat;
       background-size: contain;
       background-image: url('@/assets/image/banner/Blue.png');
@@ -11,8 +11,9 @@
       left: 0;
     }
     .yellow {
+      position: absolute;
       width: 50%;
-      height: 352px;
+      height: 100%;
       background-repeat: no-repeat;
       background-size: contain;
       background-image: url('@/assets/image/banner/Yellow.png');
@@ -20,8 +21,9 @@
       right: 0;
     }
     .red {
+      position: absolute;
       width: 50%;
-      height: 292px;
+      height: 100%;
       background-repeat: no-repeat;
       background-size: contain;
       background-image: url('@/assets/image/banner/Red.png');
@@ -29,8 +31,9 @@
       left: 0;
     }
     .green {
+      position: absolute;
       width: 53%;
-      height: 414px;
+      height: 100%;
       background-repeat: no-repeat;
       background-size: contain;
       background-image: url('@/assets/image/banner/Green.png');
@@ -38,12 +41,17 @@
       right: 0;
     }
     .Logo-center {
+      position: absolute;
       background-image: url('@/assets/image/banner/LOGO02.png');
       z-index: 2;
-      width: 565px;
+      width: 100%;
       height: 470px;
       background-repeat: no-repeat;
       background-size: contain;
+      background-position: center;
+      // transform: translate(-50%, -50%);
+      top: 20% !important;
+      left: 0% !important;
     }
 }
 .vector-bg {
@@ -52,22 +60,11 @@
   height: 600px;
 }
 .slogan {
-  height: 240px;
   .front {
     width: 50%;
-    height: 225px;
-    left: 0;
-    background-image: url('@/assets/image/slogan/Red.png');
-    background-repeat: no-repeat;
-    background-size: contain;
   }
   .ui-designr {
     width: 50%;
-    height: 250px;
-    right: 0;
-    background-size: contain;
-    background-image: url('@/assets/image/slogan/Yellow.png');
-    background-repeat: no-repeat;
   }
 }
 .slogan-title {
@@ -84,10 +81,14 @@
   .title-parimary {
     padding: 20px 0;
     color: $primary-color;
+    font-size: 64px;
+    letter-spacing: .3em;
   }
   .paragraph {
     padding-bottom: 20px;
     color: $Accent-color-09B;
+    font-size: 32px;
+    letter-spacing: .2em;
   }
 }
 .slogan03 {
@@ -97,9 +98,176 @@
   .title-parimary {
     padding-bottom: 20px;
     color: $primary-color;
+    letter-spacing: .3em;
+    font-size: 64px;
   }
   .paragraph {
     padding: 20px 0;
     color: $Accent-color-09B;
+    font-size: 32px;
+    letter-spacing: .2em;
+  }
+}
+.aos02 {
+  .week2 {
+    margin-top: -150px;
+  }
+  .week3 {
+    margin-top: -250px
+  }
+}
+.process {
+  margin-top: -100px;
+  .title {
+    display: inline-block;
+    padding: 10px;
+    background: $secondary-color-FED;
+    margin-bottom: 15px;
+  }
+  .process02 {
+    .title {
+      padding: 5px 10px;
+      color: $primary-color;
+      background: $Accent-color-EA4;
+    }
+  }
+}
+.process-left {
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: -40px;
+}
+.process-right {
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.aos-title {
+  padding: 250px 0 70px 200px;
+}
+@include media-breakpoint-down(lg) {
+  .banner-height {
+    .Logo-center {
+        position: absolute;
+        background-size: contain;
+        height: 230px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+  }
+  .aos-title {
+    padding: 55px 0 50px 30px;
+  }
+  .slogan-title {
+    width: 150px;
+    height: 120px;
+  }
+    .slogan02 {
+      .title-parimary {
+        padding: 10px 0;
+        font-size: 20px;
+        letter-spacing: .2em;
+      }
+  
+      .paragraph {
+        padding-bottom: 10px;
+        color: $Accent-color-09B;
+        font-size: 14px;
+        letter-spacing: .1em;
+      }
+    }
+  
+    .slogan03 {
+      .title-parimary {
+        padding-bottom: 10px;
+        letter-spacing: .2em;
+        font-size: 20px;
+      }
+  
+      .paragraph {
+        padding: 10px 0;
+        font-size: 14px;
+        letter-spacing: .1em;
+        margin-bottom: 0;
+      }
+    }
+}
+@include media-breakpoint-down(md) {
+.banner-height {
+  margin-top: 62px;
+    .blue {
+      position: relative;
+      width: 70%;
+      height: 160px;
+    }
+    .yellow {
+      position: relative;
+      width: 70%;
+      height: 140px;
+      margin-left: auto;
+    }
+    .red {
+      position: relative;
+      width: 70%;
+      height: 120px;
+    }
+    .green {
+      position: relative;
+      width: 70%;
+      height: 140px;
+      margin-left: auto;
+    }
+    .Logo-center {
+      position: relative;
+      background-image: url('@/assets/image/banner/mobile/Main.png');
+      background-size: contain;
+      height: 130px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .aos {
+    .aosImg01 {
+      object-fit: contain;
+      margin-left: auto;
+    }
+    .aosImg02 {
+      object-fit: contain;
+    }
+    .aosImg03 {
+      object-fit: contain;
+      margin-left: auto;
+    }
+  }
+    .process-left {
+      width: 100%;
+    }
+    .process-right {
+      margin-top: 10px;
+      width: 100%;
+    }
+.aos02 {
+  .week3 {
+    margin-top: 0px
+  }
+}
+  .vector-bg {
+    background-image: url('@/assets/image/Vector-bg-mobile.png');
+    height: 225px;
+  }
+  .slogan-title {
+    background-image: url('@/assets/image/slogan/Magenta-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 90px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .banner-height {
+    margin-top: 80px;
   }
 }
